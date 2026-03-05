@@ -1,23 +1,17 @@
-filename: README.md
-content: |
-  # Ontario Open Data CKAN Query Helpers
+# Ontario Open Data CKAN Query Helpers
 
-  A compact Python + R toolkit for querying Ontario’s CKAN-powered Open Data Catalogue. It helps you retrieve datasets (packages) and files/endpoints (resources) and provides a tight schema reference for consistent queries.
+A compact Python + R toolkit for querying Ontario’s CKAN-powered Open Data Catalogue. It helps you retrieve datasets (packages) and files/endpoints (resources) and provides a tight schema reference for consistent queries.
 
-  ---
-
-  ## What is CKAN?
-
-  CKAN is an open-source data portal platform with:
+## What is CKAN?
+CKAN is an open-source data portal platform with:
   - **Action API** for metadata (e.g., `package_show`, `resource_show`, `package_search`)
   - **Datastore API** for tabular sql data (e.g., `datastore_search`, `datastore_search_sql`)
-
-  Terminology:
+Terminology:
   - **Package (Dataset):** Top-level record describing a dataset (title, description, organization, tags, licence). Each package contains resources.
   - **Resource (File/Endpoint):** An individual file or access link (CSV/XLSX/JSON/PDF/WEB) that belongs to a package.
   - **Datastore:** CKAN’s table backend for resources; supports queries, filters, and SQL-like access.
 
-  Ontario Open Data (https://data.ontario.ca) runs on CKAN and includes Ontario-specific fields (e.g., `access_level`, `opened_date`, `current_as_of`) alongside core CKAN fields.
+Ontario Open Data (https://data.ontario.ca) runs on CKAN and includes Ontario-specific fields (e.g., `access_level`, `opened_date`, `current_as_of`) alongside core CKAN fields.
 
   ---
 
