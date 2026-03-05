@@ -1,0 +1,66 @@
+{
+  "ckan": {
+    "package": {
+      "id":                "uuid",
+      "name":              "slug",
+      "title":             "string",
+      "notes":             "text",
+      "metadata_created":  "datetime",
+      "metadata_modified": "datetime",
+      "author":            "string",
+      "author_email":      "email",
+      "maintainer":        "string",
+      "maintainer_email":  "email",
+      "license_id":        "string",
+      "owner_org":         "uuid",
+      "organization":      "object",
+      "tags":              "list[tag]",
+      "groups":            "list[group]",
+      "resources":         "list[resource]",
+      "state":             "enum(active|deleted)",
+      "extras":            "object"
+    },
+
+    "resource": {
+      "id":             "uuid",
+      "package_id":     "uuid",
+      "name":           "string",
+      "description":    "text",
+      "format":         "string",
+      "mimetype":       "string",
+      "url":            "url",
+      "size":           "int|null",
+      "created":        "datetime",
+      "last_modified":  "datetime|null",
+      "state":          "enum(active|deleted)",
+      "language":       "string|null",
+      "extras":         "object"
+    }
+  },
+
+  "ontario": {
+    "package": {
+      "access_level":        "enum(open|under review|restricted)",
+      "opened_date":         "date",
+      "current_as_of":       "date",
+      "update_frequency":    "string",
+      "geographic_coverage": "string",
+      "access_instructions": "text",
+      "maintainer_branch":   "string",
+      "exemption":           "string",
+      "exemption_rationale": "text"
+    },
+
+    "resource": {
+      "data_range_start":       "date",
+      "data_range_end":         "date",
+      "date_publicly_available":"date",
+      "data_last_updated":      "datetime",
+      "created":                "datetime",
+      "type":                   "string",
+      "format":                 "string",
+      "language":               "string",
+      "size":                   "int|null"
+    }
+  }
+}
