@@ -1,6 +1,6 @@
 filename: README.md
 content: |
-  # Ontario Open Data — CKAN Query Helpers
+  # Ontario Open Data CKAN Query Helpers
 
   A compact Python + R toolkit for querying Ontario’s CKAN-powered Open Data Catalogue. It helps you retrieve datasets (packages) and files/endpoints (resources) and provides a tight schema reference for consistent queries.
 
